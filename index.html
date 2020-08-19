@@ -51,8 +51,8 @@ and is wrapped around the whole page content, except for the footer in this exam
     <header class="w3-container w3-center w3-padding-48 w3-white">
       <h1 class="w3-xxxlarge"><b>4 Hands Food Studio</b></h1>
       <nav>
-        <h4><a>About</a></h4>
-        <h4><a>Products</a></h4>
+        <h4><a href="#about">About</a></h4>
+        <h4><a href="#products">Products</a></h4>
         <h4><a>Takeaways</a></h4>
         <h4><a>Blog</a></h4>
         <h4><a>Orders</a></h4>
@@ -64,52 +64,99 @@ and is wrapped around the whole page content, except for the footer in this exam
       <!-- Blog entries -->
       <div class="w3-col l8 s12">
 
-        <!-- Blog entry -->
+        <!-- ABOUT -->
         <div class="w3-container w3-white w3-margin w3-padding-large">
-          <div class="w3-center">
+          <div id="about" class="w3-center">
             <h3>ABOUT</h3>
           </div>
 
           <div class="w3-justify">
-            <img src="/images/rose intro.jpeg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+            <img src="/images/rose intro.jpeg" alt="" style="width:100%" class="w3-padding-16">
             <p>
-                4 Hands Food Studio make food products with a central focus on fermentation and regenerative agriculture. </br>
-                Founded by Rose Greene and Margaux Dejardin and situated in Mullingar, Ireland. </br></br> Hailed as <a href="https://www.irishtimes.com/life-and-style/food-and-drink/restaurant-reviews/review-the-best-pop-up-restaurant-in-ireland-1.4194051"><i>"the best pop-up restaurant in Ireland"</i></a> by the Irish Times. 4 Hands pop-up dinners have earned an excellent reputation in a short space of time throughout Ireland.   
-              </p>
+              4 Hands Food Studio are producers of naturally fermented foods and drinks. Sourcing the best produce, to
+              make the highest quality product! 4 Hands keeps to its sustainable thinking by the <a
+                href="#principles">principles</a> they set in place for their regenerative
+              business model.<br /><br />
+              4 Hands Food Studio's pop-up dinners have been hailed as <a
+                href="https://www.irishtimes.com/life-and-style/food-and-drink/restaurant-reviews/review-the-best-pop-up-restaurant-in-ireland-1.4194051"><i>"the
+                  best pop-up restaurant in Ireland"</i></a> by the Irish Times.
+            </p>
           </div>
         </div>
-        <hr>
 
-        <!-- Blog entry -->
+        <!-- VISION -->
+        <div class="w3-container w3-white w3-margin w3-padding-large">
+          <div id="about" class="w3-center">
+            <h3>Our Vision</h3>
+          </div>
+
+          <div class="w3-justify">
+            <p><i>"To live in a world where nature comes first, where we as humans see ourselves of part of nature, not
+                above it. To see all peoples open to receive the goodness our natural surroundings have to offer,
+                showing
+                respect and gratitude for how lucky we are to live in a world which knows better how to care for itself
+                than we ever could."</i>
+              <br /> <br />
+              - Rose Greene & Margaux Dejardin, 4 Hands Food Studio
+            </p>
+          </div>
+        </div>
+
+        <!-- TAKEAWAYS -->
         <div class="w3-container w3-white w3-margin w3-padding-large">
           <div class="w3-center">
-            <h3>TAKEAWAYS</h3>
+            <h3>4 Hand's Weekly Dinner:</h3>
+
           </div>
 
           <div class="w3-justify">
             <img src="/images/4handsf-6339.jpeg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
-            <p>Some text here</p>
-            <p class="w3-clear"></p>
+            <p class="w3-clear">Nourishing, sustainable, tasty ready-to-go meal to enjoy with your loved ones in the
+              comfort of your own home.
+              </br>
+              </br>
+              Our takeaway is by pre-order only, join our mailing list to receive the weekly menu, or check out the
+              website each Monday for the update.
+              Food is served in glass jars, we greatly appreciate the return of clean jars helping eliminate waste.</p>
           </div>
         </div>
 
-        <!-- Blog entry -->
+        <!-- PRODUCTS -->
         <div class="w3-container w3-white w3-margin w3-padding-large">
-          <div class="w3-center">
+          <div id="products" class="w3-center">
             <h3>PRODUCTS</h3>
           </div>
 
           <div class="w3-justify">
-            <img src="/w3images/runway.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
-          <p>Text goes here.
-          </p>         
+            <!-- Ths box that the product info goes into. -->
+            <div class="productBoxForFlexing">
+              <img src="/images/Kombucha.jpeg" alt="Runway" style="width:100%" class="w3-padding-16">
+              <p onclick="openOrClose()">Text goes here.</p>
+            </div>
+          </div>
+          <div class="retailerList" onclick="openOrClose()">
+            <h4>Find Retailers.</h4>
+          </div>
+          <div id="displayOrNot">
+            <h3>Test</h3>
+          </div>
         </div>
-        </div>
+
+           <!-- VISION -->
+           <div class="w3-container w3-white w3-margin w3-padding-large">
+            <div id="about" class="w3-center">
+              <h3>Blog</h3>
+            </div>
+              <div class="w3-justify" id="retainable-rss-embed" data-rss="https://medium.com/feed/@4handsf" data-maxcols="3" data-layout="grid"
+              data-poststyle="inline" data-readmore="Read the rest" data-buttonclass="btn btn-primary"
+              data-offset="-100">
+          </div>
+          </div>
 
         <!-- END BLOG ENTRIES -->
       </div>
 
-      <!-- About/Information menu -->
+      <!-- ABOUT -->
       <div class="w3-col l4">
         <!-- About Card -->
         <div class="w3-white w3-margin">
@@ -130,38 +177,46 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
         </div>
         <hr>
-        
 
-        <!-- Posts -->
+
+        <!-- PRINCIPLES -->
         <div class="w3-white w3-margin">
-          <div class="w3-container w3-padding w3-black">
-            <h4>Products</h4>
+          <div id="principles" class="w3-container w3-padding w3-black">
+            <h4>Our Principles</h4>
           </div>
           <ul class="w3-ul w3-hoverable w3-white">
-            <li class="w3-padding-16">
-              <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large">Product</span>
-              <br>
-              <span>Sed mattis nunc</span>
+            <li>
+              <span class="w3-large">1. Make the best product possible</span>
             </li>
             <li class="w3-padding-16">
-              <img src="/w3images/bandmember.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large">Product</span>
-              <br>
-              <span>Praes tinci sed</span>
+              <span class="w3-large">2. Always strive to improve and innovate on every level</span>
             </li>
             <li class="w3-padding-16">
-              <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-              <span class="w3-large">Product</span>
-              <br>
-              <span>Ultricies congue</span>
+              <span class="w3-large">3. Nutrition is key.</span>
             </li>
             <li class="w3-padding-16">
-              <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia"
-                style="width:50px">
-              <span class="w3-large">Product</span>
-              <br>
-              <span>Lorem ipsum dipsum</span>
+              <span class="w3-large">4. Connect with suppliers, continually control and monitor supply chain.</span>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large">5. Minimize the creation of waste.</span>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large">6. Access environmental outcome of any business decision before making it.</span>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large">7. Support and promote farmers that fit principles.</span>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large">8. Engage with and teach food citizens (customers).</span>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large">9. Continually push for the collective good, to give better access to sustainable
+                food to a maximum of people, while supporting biodiversity and regenerative agriculture.
+              </span>
+            </li>
+            <li class="w3-padding-16">
+              <span class="w3-large">10. Lead by example
+              </span>
             </li>
           </ul>
         </div>
@@ -169,10 +224,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 
         <hr>
 
-        <!-- Tags -->
-        <hr>
 
-        <!-- Inspiration -->
+        <!-- GALLERY -->
         <div class="w3-white w3-margin">
           <div class="w3-container w3-padding w3-black">
             <h4>Gallery</h4>
@@ -192,7 +245,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
         <hr>
 
-        <!-- Subscribe -->
+        <!-- SUBSCRIBE -->
         <div class="w3-white w3-margin">
           <!-- <div class="w3-container w3-padding w3-black">
           <h4>Subscribe</h4>
@@ -236,24 +289,9 @@ and is wrapped around the whole page content, except for the footer in this exam
     <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
   </footer>
 
-  <script>
-    // Toggle between hiding and showing blog replies/comments
-    document.getElementById("myBtn").click();
-    function myFunction(id) {
-      var x = document.getElementById(id);
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-
-    function likeFunction(x) {
-      x.style.fontWeight = "bold";
-      x.innerHTML = "✓ Liked";
-    }
-  </script>
-
+  <!-- Script to display or show more information if they are curious. -->
+  <script src="/openOrClose.js"></script>
 </body>
+<script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 
 </html>

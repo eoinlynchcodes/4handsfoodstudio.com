@@ -1614,3 +1614,16 @@ nav{
     justify-content: space-evenly;
     height:
 }
+
+.retailerList{
+  color: white;
+  background-color: red;
+  padding: 0.5em 1em;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.displayOrNot{
+  display: none;
+}
