@@ -1612,10 +1612,9 @@ nav{
 .topPicture{
     display: flex;
     justify-content: space-evenly;
-    height:
 }
 
-.retailerList{
+.retailerButton{
   color: white;
   background-color: red;
   padding: 0.5em 1em;
@@ -1624,6 +1623,11 @@ nav{
   border-radius: 12px;
 }
 
-.displayOrNot{
+.displayNone{
   display: none;
 }
+
+.display{
+  display: block;
+}
+
