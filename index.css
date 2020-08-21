@@ -1663,8 +1663,9 @@ nav h2 a{
   background-color: black;
   display: flex;
   justify-content: space-around;
-  padding: 1.5rem;
+  padding: 1rem;
   font-size: 30px;
+  position: sticky;
 }
 
 .containerByEoin{
@@ -1674,4 +1675,14 @@ nav h2 a{
 
 table, th, td {
   border: 1px solid black;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+
+#retainable-rss-embed{
+  border: 1px solid red;
 }
