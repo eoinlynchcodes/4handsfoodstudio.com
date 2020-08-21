@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
 <link href='https://css.gg/instagram.css' rel='stylesheet'>
 <style>
   h1,
@@ -160,18 +162,21 @@ and is wrapped around the whole page content, except for the footer in this exam
                 why not come taste them at one of our dining events? </p>
             </div>
           </div>
-          <div class="retailerButton" onclick="openOrClose()">
-            <h4>Where can you buy our products?</h4>
-          </div>
-          <div id="retailerList" class="displayNone">
-            <h3>
-              Nuts and Grains, Mullingar<br />
-              Foxes, Mullingar<br />
-              Lowe and Co, Athlone<br />
-              Skellys, Ballymahon<br />
-              Wilder and Gold, Ballymahon
-              </ul>
-            </h3>
+
+          <div class="findingProducts">
+            <button onclick="openOrClose()" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 border border-blue-700 rounded">
+              Find Products
+            </button>
+            <div id="retailerList" class="displayNone">
+              <h3>
+                Nuts and Grains, Mullingar<br />
+                Foxes, Mullingar<br />
+                Lowe and Co, Athlone<br />
+                Skellys, Ballymahon<br />
+                Wilder and Gold, Ballymahon
+                </ul>
+              </h3>
+            </div>
           </div>
         </div>
 
@@ -336,7 +341,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Footer -->
   <footer class="w3-container w3-dark-grey" style="padding:32px">
-    <i class="gg-instagram"></i>
+    <a href="https://www.instagram.com/4hands_food_studio/?hl=en"><i class="gg-instagram"></i></a>
   </footer>
 
   <!-- Script to display or show more information if they are curious. -->
