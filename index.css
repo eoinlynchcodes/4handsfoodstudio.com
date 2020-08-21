@@ -218,6 +218,9 @@ h6 {
   font-weight: 400;
   margin: 10px 0;
 }
+
+
+
 .w3-wide {
   letter-spacing: 4px;
 }
@@ -1602,7 +1605,11 @@ a {
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+nav h2{
+  padding: 0rem 1rem;
 }
 
 .flexRose{
@@ -1637,4 +1644,13 @@ nav{
   width: 80%;
   margin: 0 auto;
   align-items: center;
+}
+
+.navByEoin{
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5rem;
+  font-size: 30px;
 }
