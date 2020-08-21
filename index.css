@@ -1602,6 +1602,10 @@ a {
   border-color: #e7ffff !important;
 }
 
+footer{
+  height: 15rem;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -1610,6 +1614,14 @@ nav{
 
 nav h2{
   padding: 0rem 1rem;
+}
+
+nav h2:hover{
+  color: green 
+}
+
+nav h2 a{
+  text-decoration: none;
 }
 
 .flexRose{
@@ -1653,4 +1665,9 @@ nav h2{
   justify-content: space-around;
   padding: 1.5rem;
   font-size: 30px;
+}
+
+.containerByEoin{
+  padding: 2rem;
+  margin: 0 auto;
 }
