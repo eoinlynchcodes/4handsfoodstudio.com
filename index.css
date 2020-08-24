@@ -1714,4 +1714,17 @@ th, td {
 .oneLine{
   padding: 2rem;
   display: flex;
+  justify-content: center;
 }
+
+.productSection{
+  display: flex;
+  width: 100%;
+
+}
+
+.productDiv{
+  padding: 1rem;
+  width: 100%;
+}
+
