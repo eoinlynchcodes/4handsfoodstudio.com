@@ -1603,6 +1603,7 @@ a {
 }
 
 footer{
+
 }
 
 nav{
@@ -1702,13 +1703,7 @@ th, td {
 .moreAbout{
   border: solid 1px black;
   padding: .5rem;
-}
 
-.centreOfFooter{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
 }
 
 .oneLine{
@@ -1720,11 +1715,33 @@ th, td {
 .productSection{
   display: flex;
   width: 100%;
-
 }
 
 .productDiv{
-  padding: 1rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
 }
 
+.footerContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.closedPanel{
+  display: none;
+}
+
+.moreAbout:hover {
+  background-color: black;
+  color: white;
+}
+
+.openPanel{
+  display: flex;
+  flex-direction: column;
+  border: solid 1px black;
+  padding: .5rem;
+}

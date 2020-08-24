@@ -23,13 +23,13 @@
     font-family: "Bodini LFL"
   }
 
-  @font-face {
+  /* @font-face {
     font-family: "Lovelo Line";
     src: url("../fonts/Lovelo/Lovelo-Black.woff2"),
       url("../fonts//fontawesome-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-  }
+  } */
 
   @font-face {
     font-family: "Bodini LFL";
@@ -105,7 +105,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 </div>
                 <img src="images/4handsf-6217.jpg">
                 <div class="moreAbout">
-                  <p></p>
+
                 </div>
               </div>
 
@@ -113,7 +113,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 <div id="about" class="w3-container w3-padding w3-black">
                   <h4 onclick="openOrClose()">Kimchi</h4>
                 </div>
-                <img src="images/kimchi.jpg" >
+                <img src="images/kimchi.jpg">
                 <div>
                   <p>Curious?...</p>
                 </div>
@@ -304,18 +304,46 @@ and is wrapped around the whole page content, except for the footer in this exam
               <div class="w3-col s6">
                 <p><img src="/images/rose.jpeg" alt="Jeans" style="width:100%"></p>
                 <p class="w3-container w3-padding w3-black">Rose Greene</p>
-                <a href="">
-                  <p class="moreAbout">More about Rose...</p>
-                </a>
+                <p onclick="openPanelRose()" class="moreAbout">More on Rose..</p>
+                <p id="rose" class="closedPanel">Rose’s life has always orientated around food, studies in Culinary Arts
+                  led to cooking in a number of
+                  world renowned restaurants internationally.
+                  She has always focused her career on produce, going to the source and supporting farmers while
+                  instilling
+                  the importance of providence to young budding cooks she mentored throughout her 15 year career as a
+                  chef.
+                  <br /><br />
+                  Always a curious mind, fermentation became a core of her work.
+                  Gaining an in-depth understanding of the health benefits of fermentation through collaboration with
+                  the
+                  microbiology department of Antwerp university, using her knowledge in natural fermentation to assist
+                  professors and PHD students in their studies.
+                </p>
               </div><br />
 
               <div class="w3-col s6">
                 <p><img src="/images/maragux.jpeg" alt="Jeans" style="width:100%"></p>
                 <p class="w3-container w3-padding w3-black">Margaux Dejardin
                 </p>
-                <a href="">
-                  <p class="moreAbout">More about Margaux...</p>
-                </a>
+                <p onclick="openPanelMargaux()" class="moreAbout">More on Margaux..</p>
+                <p id="margaux" class="closedPanel">Margaux’s French roots seen her raised with an appreciation of food
+                  culture, which followed her
+                  throughout her life as a simple pleasure. It was only later in life she decided to forge a career in
+                  her
+                  true passion, food.
+
+                  Having a great sensitivity to nature, and all living things, the core of her interest in food was
+                  leading
+                  the way in sustainable thinking and the betterment of our natural surroundings.
+                  <br /><br />
+                  Within Europe she gained an extensive knowledge in organic farming practices, working along side some
+                  amazing farming minds to develop her own growing style which she uses today.
+                  Wellbeing is also key to life, as she continually strives to increase her knowledge in medicinal
+                  plants
+                  and their uses.
+                  Together Rose and Margaux call upon their experience daily to help them achieve their goals as a
+                  leading
+                  sustainable food business. </p>
               </div>
             </div>
           </div>
@@ -351,45 +379,6 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
         </div>
         <hr>
-        <!-- About Card -->
-        <div class="w3-white w3-margin">
-          <img src="/images/rose.jpeg" alt="" style="width:100%">
-          <div class="w3-container w3-black">
-            <h4>Rose Greene</h4>
-            <p>Rose’s life has always orientated around food, studies in Culinary Arts led to cooking in a number of
-              world renowned restaurants internationally.
-              She has always focused her career on produce, going to the source and supporting farmers while instilling
-              the importance of providence to young budding cooks she mentored throughout her 15 year career as a chef.
-              <br /><br />
-              Always a curious mind, fermentation became a core of her work.
-              Gaining an in-depth understanding of the health benefits of fermentation through collaboration with the
-              microbiology department of Antwerp university, using her knowledge in natural fermentation to assist
-              professors and PHD students in their studies.
-            </p>
-          </div>
-        </div>
-
-        <div class="w3-white w3-margin">
-          <img src="/images/maragux.jpeg" alt="" style="width:100%">
-          <div class="w3-container w3-black">
-            <h4>Margaux Dejardin</h4>
-            <p>Margaux’s French roots seen her raised with an appreciation of food culture, which followed her
-              throughout her life as a simple pleasure. It was only later in life she decided to forge a career in her
-              true passion, food.
-
-              Having a great sensitivity to nature, and all living things, the core of her interest in food was leading
-              the way in sustainable thinking and the betterment of our natural surroundings.
-              <br /><br />
-              Within Europe she gained an extensive knowledge in organic farming practices, working along side some
-              amazing farming minds to develop her own growing style which she uses today.
-              Wellbeing is also key to life, as she continually strives to increase her knowledge in medicinal plants
-              and their uses.
-              Together Rose and Margaux call upon their experience daily to help them achieve their goals as a leading
-              sustainable food business. </p>
-          </div>
-        </div>
-        <hr>
-
 
         <!-- PRINCIPLES -->
         <div class="w3-white w3-margin">
@@ -413,7 +402,8 @@ and is wrapped around the whole page content, except for the footer in this exam
               <span class="w3-large">5. Minimize the creation of waste.</span>
             </li>
             <li class="w3-padding-16">
-              <span class="w3-large">6. Assess the environmental outcome of any business decision before making it.</span>
+              <span class="w3-large">6. Assess the environmental outcome of any business decision before making
+                it.</span>
             </li>
             <li class="w3-padding-16">
               <span class="w3-large">7. Support and promote farmers that fit principles.</span>
@@ -461,7 +451,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Footer -->
   <footer class="w3-container w3-dark-grey" style="padding:32px">
-    <div class="containerByEoin">
+    <div class="footerContainer">
       <div class="socialIcons">
         <a href="https://www.instagram.com/4hands_food_studio/?hl=en">
           <p><u>Follow us on Instagram</u></p>
@@ -471,18 +461,20 @@ and is wrapped around the whole page content, except for the footer in this exam
         </a><br />
         <a
           href="https://www.irishtimes.com/life-and-style/food-and-drink/restaurant-reviews/review-the-best-pop-up-restaurant-in-ireland-1.4194051"><u>
-            Irish Times article on 4 Hands Food Studio</u>
+            Irish Times article</u>
         </a>
       </div>
+      <div class="centreOfFooter">
+        <p>4 Hands Food Studio &copy; 2020.</p><br />
+        <p><a href="https://eoinlynch.com">Design & Code, by <u>Eoin Lynch</u></a></p>
+      </div>
     </div>
-    <div class="centreOfFooter">
-      <p>&copy; 4 Hands Food Studio 2020.</p><br />
-      <p><a href="https://eoinlynch.com">Code by Eoin Lynch</a></p>
-    </div>
+
   </footer>
 
   <!-- Script to display or show more information if they are curious. -->
   <script src="/openOrClose.js"></script>
+  <script src="openPanel.js"></script>
 </body>
 <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
 
