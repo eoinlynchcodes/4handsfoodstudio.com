@@ -1753,3 +1753,8 @@ th, td {
   justify-content: center;
   
 }
+
+.aroundBlog{
+  border: 1px solid black;
+  background-color: red;
+}
