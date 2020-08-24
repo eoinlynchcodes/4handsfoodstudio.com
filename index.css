@@ -1728,6 +1728,7 @@ th, td {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 2rem;
 }
 
 .closedPanel{
@@ -1744,4 +1745,11 @@ th, td {
   flex-direction: column;
   border: solid 1px black;
   padding: .5rem;
+}
+
+.middleOfFooter{
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  
 }
