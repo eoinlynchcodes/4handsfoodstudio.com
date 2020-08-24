@@ -1740,6 +1740,7 @@ th, td {
   padding: .5rem;
 }
 
+
 .middleOfFooter{
   padding: 1.5rem;
   display: flex;
@@ -1754,4 +1755,9 @@ th, td {
 
 .footerSections{
   padding: 1rem;
+}
+
+#centreAboutRoseButton{
+  display: flex;
+  margin: 0 auto;
 }
