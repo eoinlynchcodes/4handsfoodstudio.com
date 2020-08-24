@@ -1686,3 +1686,8 @@ th, td {
 #retainable-rss-embed{
   border: 1px solid red;
 }
+
+.socialIcons{
+  display: flex;
+  flex-direction: column;
+}
