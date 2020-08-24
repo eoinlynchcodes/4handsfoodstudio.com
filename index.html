@@ -193,9 +193,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 
           <div id="blog" class="w3-container w3-padding w3-black">
             <h4>Blog</h4>
-          </div>
+          </div><br/>
           <div class="w3-justify" id="retainable-rss-embed" data-rss="https://medium.com/feed/@4handsf" data-maxcols="3"
-            data-layout="grid" data-poststyle="inline" data-readmore="Read the rest" data-buttonclass="btn btn-primary"
+            data-layout="grid" data-poststyle="inline" data-readmore="Read the rest..." data-buttonclass="btn btn-primary"
             data-offset="-100">
           </div>
         </div>
@@ -222,7 +222,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                 href="https://www.irishtimes.com/life-and-style/food-and-drink/restaurant-reviews/review-the-best-pop-up-restaurant-in-ireland-1.4194051"><i><u>"the
                   best pop-up restaurant in Ireland"</u></i></a> by the Irish Times.
                   <br/><br/>
-                  4 Hands was founded by Rose Greene and Margaux in 2018, in Rathaspick, Ireland. 
+                  4 Hands was founded by Rose Greene and Margaux Dejardin in 2018, in Rathaspick, Ireland. 
             </p>
             <br />
 
@@ -367,8 +367,45 @@ and is wrapped around the whole page content, except for the footer in this exam
           <div class="w3-container w3-white">
             <!-- <p>Enter your e-mail below and get notified on the latest blog posts.</p> -->
             <!-- <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p> -->
-            <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'"
-                class="w3-button w3-block w3-red">Subscribe to our Newsletter</button></p>
+            <!-- <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'"
+                class="w3-button w3-block w3-red">Subscribe to our Newsletter</button></p> -->
+                <section>
+                  <div class="container">
+                      <!-- Begin Mailchimp Signup Form -->
+                      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet"
+                          type="text/css">
+                      <style type="text/css">
+                          #mc_embed_signup {
+                              background: #333;
+                              color: white;
+                              clear: left;
+                              font: 14px Helvetica, Arial, sans-serif;
+                              width: 100%;
+                          }
+  
+                          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                      </style>
+                      <div id="mc_embed_signup">
+                          <form
+                              action="https://gmail.us19.list-manage.com/subscribe/post?u=5f345ee5b52850316f8e104b4&amp;id=e9b9605d2b"
+                              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                              class="validate" target="_blank" novalidate>
+                              <div id="mc_embed_signup_scroll">
+                                  <label for="mce-EMAIL">Subscribe to our News Letter</label>
+                                  <div class="oneLine">
+                                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                                      placeholder="your@email.com..." required>
+                                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                          id="mc-embedded-subscribe" class="button subscribeButton" style="background-color: red"></div>
+                                        </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  <!--End mc_embed_signup-->
+              </section>
           </div>
         </div>
 

@@ -1710,3 +1710,8 @@ th, td {
   align-content: center;
   justify-content: center;
 }
+
+.oneLine{
+  padding: 2rem;
+  display: flex;
+}
