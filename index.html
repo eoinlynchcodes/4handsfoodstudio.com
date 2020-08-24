@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="nav.css" >
 <link href='https://css.gg/instagram.css' rel='stylesheet'>
+
 <style>
   h1,
   h2,
@@ -63,7 +65,7 @@
 and is wrapped around the whole page content, except for the footer in this example -->
   <div class="w3-content" style="max-width:1600px">
     <!-- Header -->
-    <header class="navByEoin">
+    <!-- <header class="navByEoin">
       <h2 class=""><b>4 Hands Food Studio</b></h2>
       <nav>
         <h2><a href="#about">About</a></h2>
@@ -72,7 +74,18 @@ and is wrapped around the whole page content, except for the footer in this exam
         <h2><a href="#blog">Blog</a></h2>
         <h2><a>Orders</a></h2>
       </nav>
-    </header>
+    </header> -->
+
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">4 Hands Food Studio</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#takeaways">Takeaways</a>
+      <a href="#blog">Blog</a>
+      <a href="javascript:void(0);" class="icon" onclick="resizeNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
 
     <!-- Grid -->
     <div class="w3-row w3-padding w3-border">
@@ -89,35 +102,35 @@ and is wrapped around the whole page content, except for the footer in this exam
           <div class="w3-justify">
             <img src="/images/unnamed.jpg" alt="" style="width:100%" class="w3-padding-16">
 
-            <div class="productSection">
-              <div class="productDiv">
-                <div id="about" class="w3-container w3-padding w3-black">
+            <section class="productSection">
+              <section class="productDiv">
+                <div class="w3-padding w3-black">
                   <h4 onclick="openOrClose()">Kombucha</h4>
                 </div>
                 <img src="images/4handsf-6217.jpg">
                 <div class="moreAbout">
                 </div>
-              </div>
+              </section>
 
-              <div class="productDiv">
-                <div id="about" class="w3-container w3-padding w3-black">
+              <section class="productDiv">
+                <div class="w3-padding w3-black">
                   <h4 onclick="openOrClose()">Kimchi</h4>
                 </div>
                 <img src="images/kimchi.jpg">
                 <div>
                   <p>Curious?...</p>
                 </div>
-              </div>
+              </section>
 
-              <div class="productDiv">
-                <div id="about" class="w3-container w3-padding w3-black">
+              <section class="productDiv">
+                <div class="w3-padding w3-black">
                   <h4 onclick="openOrClose()">Kombucha</h4>
                 </div>
                 <div>
                   <p>Curious?...</p>
                 </div>
-              </div>
-            </div>
+              </section>
+            </section>
 
             <p>Kombucha
 
@@ -209,10 +222,10 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-container w3-white w3-margin w3-padding-large">
           <div class="w3-justify">
             <div id="takeaways" class="w3-container w3-padding w3-black">
-              <h4>"TAKEAWAY" by 4 Hands Food Studio</h4>
+              <h4>Takeaways</h4>
             </div>
 
-            <img src="/images/4handsf-6339.jpeg" alt="Men in Hats" style="width:100%" class="w3-padding-16">
+            <img src="/images/4handsf-6339.jpeg" alt="" style="width:100%" class="w3-padding-16">
             <p class="w3-clear">Nourishing, sustainable, tasty ready-to-go meal to enjoy with your loved ones in the
               comfort of your own home.
               </br>
@@ -311,7 +324,7 @@ and is wrapped around the whole page content, except for the footer in this exam
               </div><br />
 
               <div class="w3-col s6">
-                <p><img src="/images/maragux.jpeg" alt="Jeans" style="width:100%"></p>
+                <p><img src="/images/maragux.jpeg" alt="" style="width:100%"></p>
                 <p class="w3-container w3-padding w3-black">Margaux Dejardin
                 </p>
                 <p onclick="openPanelMargaux()" class="moreAbout">More on Margaux..</p>
@@ -441,7 +454,7 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Footer -->
   <footer class="w3-container w3-dark-grey" style="padding:32px">
     <div class="footerContainer">
-      <div>
+      <div class="footerSections">
         <p>Follow us on:</p>
         <a href="https://www.instagram.com/4hands_food_studio/?hl=en">
           <p><u>Instagram</u></p>
@@ -451,7 +464,7 @@ and is wrapped around the whole page content, except for the footer in this exam
         </a>
       </div>
 
-      <div>
+      <div class="footerSections">
         <p>Read:</p>
         <a
           href="https://www.irishtimes.com/life-and-style/food-and-drink/restaurant-reviews/review-the-best-pop-up-restaurant-in-ireland-1.4194051"><u>
@@ -473,6 +486,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Script to display or show more information if they are curious. -->
   <script src="/openOrClose.js"></script>
+  <script src="navFunctionality.js"></script>
   <script src="openPanel.js"></script>
 </body>
 <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
