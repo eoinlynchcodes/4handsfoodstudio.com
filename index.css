@@ -1603,7 +1603,6 @@ a {
 }
 
 footer{
-  height: 15rem;
 }
 
 nav{
@@ -1690,4 +1689,24 @@ th, td {
 .socialIcons{
   display: flex;
   flex-direction: column;
+}
+
+.flexRoseAndMargaux{
+  display: flex;
+}
+
+.flexRoseAndMargaux div{
+  padding: 1rem;
+}
+
+.moreAbout{
+  border: solid 1px black;
+  padding: .5rem;
+}
+
+.centreOfFooter{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
